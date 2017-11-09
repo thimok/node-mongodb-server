@@ -14,7 +14,7 @@ npm start
 De server runt op [localhost:3000](http://localhost:3000).
 
 ## API Endpoints
-Om de API te kunnen gebruiken moet je inloggen. Dat kan met [Postman](https://www.getpostman.com/docs/introduction). 
+Aanroepen van de endpoints kan met [Postman](https://www.getpostman.com/docs/introduction). 
 
 Voorbeelden van endpoints: 
 - GET,POST [localhost:3000/api/v1/users](http://localhost:3000/api/v1/users)
