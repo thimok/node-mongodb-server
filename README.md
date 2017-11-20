@@ -37,6 +37,8 @@ De connectionstring bouwen we op aan de hand van onderstaande omgevingsvariabele
 ### Omgevingsvariabelen
 In de cloud moet je een aantal omgevingsvariabelen instellen. Dit zijn variablelen waarin configuratiewaarden zijn opgeslagen. Je wilt die settings (bv username, password) niet hardcoded in je programmabestanden opslaan.
 
+![config vars](https://github.com/avansinformatica/node-mongodb-server/blob/master/configvars.png)
+
 De variabelen die je moet instellen:
 - DB_HOST: de host waar je database draait
 - DB_USER: username waarmee je in je database inlogt
