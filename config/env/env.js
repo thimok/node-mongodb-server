@@ -6,7 +6,7 @@ var env = {
     dbDatabase: process.env.DB_DATABASE || 'users'
 }
 
-var dburl = process.env.ENV === 'production' ?
+var dburl = process.env.NODE_ENV === 'production' ?
     'mongodb://' + env.DB_USER + ':' + env.DB_PASSWORD + '@' + env.DB_HOST + ':15166/' + env.DB_DATABASE :
     'mongodb://localhost/' + env.dbDatabase
 
