@@ -40,10 +40,10 @@ In de cloud moet je een aantal omgevingsvariabelen instellen. Dit zijn variablel
 ![config vars](https://github.com/avansinformatica/node-mongodb-server/blob/master/configvars.png)
 
 De variabelen die je moet instellen:
-- DB_HOST: de host waar je database draait
-- DB_USER: username waarmee je in je database inlogt
-- DB_PASSWORD: password van de database user
-- DB_DATABASE: de naam van je database
-- DB_PORT: de port waarop je database bereikbaar is
 - ALLOW_ORIGIN: de URL van je Angular frontend. Hiermee geef je je frontend toegang tot de server.
+- DB_DATABASE: de naam van je database
+- DB_HOST: de host waar je database draait
+- DB_PASSWORD: password van de database user
+- DB_PORT: de port waarop je database bereikbaar is
+- DB_USER: username waarmee je in je database inlogt
 
