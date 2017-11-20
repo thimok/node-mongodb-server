@@ -44,8 +44,9 @@ app.use(bodyParser.json({
 app.set('port', (process.env.PORT | config.env.webPort));
 app.set('env', (process.env.ENV | 'development'))
 
-console.dir(config);
-console.log(config.dburl);
+// wanneer je je settings wilt controleren
+// console.dir(config);
+// console.log(config.dburl);
 
 // Installeer Morgan als logger
 app.use(logger('dev'));
