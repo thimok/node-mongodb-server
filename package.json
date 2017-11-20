@@ -1,16 +1,15 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "node server met API naar mongodb database",
+  "description": "Node server met API naar mongodb database",
   "main": "server.js",
   "scripts": {
     "test": "node node_modules/mocha/bin/_mocha ./test/*test.js --reporter spec",
-    "sonar": "gulp sonarqube",
     "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rschellius/node-eersteserver.git"
+    "url": "git+https://github.com/avansbreda.git"
   },
   "keywords": [
     "node",
@@ -18,11 +17,11 @@
     "mongoose",
     "server"
   ],
-  "author": "rschellius",
+  "author": "Avans Informatica Breda",
   "license": "ISC",
-  "homepage": "https://github.com/rschellius/node-eersteserver#readme",
+  "homepage": "https://github.com/avansbreda#readme",
   "bugs": {
-    "url": "https://github.com/rschellius/node-eersteserver/issues"
+    "url": "https://github.com/avansbreda/issues"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -34,16 +33,12 @@
     "morgan": "^1.8.1"
   },
   "devDependencies": {
-    "buffer-shims": "^1.0.0",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-istanbul": "^1.1.2",
     "gulp-mocha": "^4.3.1",
     "mocha": "^3.3.0",
-    "nodemon": "^1.11.0",
-    "run-sequence": "^1.2.2",
-    "sinon": "^2.3.2",
-    "sonarqube-scanner": "^1.2.0"
+    "nodemon": "^1.11.0"
   }
 }

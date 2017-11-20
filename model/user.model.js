@@ -2,38 +2,17 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-    name: String,
-    title: { 
-        type: String, 
-        required: true 
-    }, 
-    value: { 
-        type: Number, 
-        min: 5, 
-        max: 20 
-    },
-    meta: {
-        likes: [String],
-        birth: { 
-            type: Date, 
-            default: new Date() 
-        }
-    }
-},{
+    name: String
+}, {
     timestamps: true
 });
 
 
 const User = mongoose.model('user', UserSchema);
 
+// Add a 'dummy' user (every time you require this file!)
 const user = new User({
-    name: 'Robin', 
-    title: 'Mr.',
-    age: 16,
-    meta: {
-        likes: ['one', 'two', 'three', 'four']
-    }
+    name: 'Joe',
 }).save();
-
 
 module.exports = User;
