@@ -8,7 +8,7 @@ var logger = require('morgan');
 var mongodb = require('./config/mongo.db');
 var userroutes_v1 = require('./api/user.routes.v1');
 // var auth_routes_v1 = require('./api/authentication.routes.v1');
-var config = require('./config/config');
+var config = require('./config/env/env');
 // var expressJWT = require('express-jwt');
 
 var app = express();
@@ -41,7 +41,7 @@ app.use(bodyParser.json({
 // }));
 
 // configureer de app
-app.set('port', (process.env.PORT | config.webPort));
+app.set('port', (process.env.PORT | config.env.webPort));
 app.set('env', (process.env.ENV | 'development'))
 
 // Installeer Morgan als logger
@@ -88,7 +88,7 @@ app.use('*', function (req, res) {
 });
 
 // Installatie klaar; start de server.
-app.listen(process.env.PORT || 3000, function () {
+app.listen(config.env.webPort, function () {
     console.log('De server luistert op port ' + app.get('port'));
     console.log('Zie bijvoorbeeld http://localhost:3000/api/v1/users');
 });
