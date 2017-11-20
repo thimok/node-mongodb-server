@@ -1,6 +1,6 @@
 # Node Mongodb server
 Nodejs server, biedt API op een Mongodb database met userinformatie.
-
+De server heeft geen frontend; hiervoor is een externe frontend applicatie nodig, zoals bijvoorbeeld deze[angular-starterpack](https://github.com/avansinformatica/angular-starterpack).
 
 ## Vooraf
 - nodejs installeren
