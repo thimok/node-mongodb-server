@@ -41,8 +41,8 @@ app.use(bodyParser.json({
 // }));
 
 // configureer de app
-app.set('port', (process.env.PORT | config.env.webPort));
-app.set('env', (process.env.ENV | 'development'))
+app.set('port', (process.env.PORT || config.env.webPort));
+app.set('env', (process.env.ENV || 'development'))
 
 // wanneer je je settings wilt controleren
 // console.dir(config);
@@ -85,7 +85,7 @@ app.use(function (err, req, res, next) {
 
 // Fallback - als geen enkele andere route slaagt wordt deze uitgevoerd. 
 app.use('*', function (req, res) {
-    res.status(400);
+    res.status(418);
     res.json({
         'error': 'Deze URL is niet beschikbaar.'
     });
